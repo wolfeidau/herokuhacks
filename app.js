@@ -2,7 +2,8 @@
 var express = require('express');
 var env = require('./lib/env');
 var routes = require('./lib/routes');
-var sdc = new require('statsd-client')({host: '118.209.120.74'});
+var StatsDClient = require('statsd-client');
+var sdc = new StatsDClient({host: '118.209.120.74', port: 8124, debug: true});
 
 var app = express();
 
