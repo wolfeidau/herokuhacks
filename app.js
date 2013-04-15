@@ -2,8 +2,11 @@
 var express = require('express');
 var env = require('./lib/env');
 var routes = require('./lib/routes');
+var sdc = new require('statsd-client')({host: 'wolfe.id.au'});
 
 var app = express();
+
+app.use(sdc.helpers.getExpressMiddleware('herokudev'));
 
 // Global Configuration
 app.configure(function(){

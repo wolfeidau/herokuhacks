@@ -5,7 +5,6 @@
     "./public/js/site.js"
   ],
   "dependencies": {
-    "bootstrap": "~2.3.1",
-    "font-awesome": "~3.0.2"
+    "bootstrap": "~2.3.1"
   }
 }
