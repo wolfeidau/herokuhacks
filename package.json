@@ -2,10 +2,17 @@
   "name": "node-example",
   "version": "0.0.1",
   "dependencies": {
-    "express": "~3.1.1"
+    "express": "~3.1.2",
+    "jade": "~0.28.2",
+    "nconf": "~0.6.7"
   },
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "chai": "~1.5.0",
+    "sinon": "~1.6.0"
   }
 }

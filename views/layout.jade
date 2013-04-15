@@ -1,0 +1,32 @@
+!!!
+html(lang='en')
+    head
+        include includes/head
+
+    body
+        .navbar.navbar-fixed-top
+            .navbar-inner
+                .container
+                    a.brand(href='/') Test
+                    .nav-collapse.collapse
+                        ul.nav
+                            li.active
+                                a(href="/") Home
+                            li
+                                a(href="/about") About
+
+        .container
+            block content
+
+        .container
+
+            block footer
+                footer.page-footer
+                    p &copy; Mark Wolfe 2013
+                    p=version
+
+
+        block scripts
+            script(src='/components/jquery/jquery.min.js')
+            script(src='/components/bootstrap/docs/assets/js/bootstrap.min.js')
+            script(src='/js/site.js')
