@@ -4,7 +4,8 @@
   "dependencies": {
     "express": "~3.1.2",
     "jade": "~0.28.2",
-    "nconf": "~0.6.7"
+    "nconf": "~0.6.7",
+    "bower": "~0.8.6"
   },
   "engines": {
     "node": "0.8.x",
@@ -14,5 +15,8 @@
     "mocha": "~1.9.0",
     "chai": "~1.5.0",
     "sinon": "~1.6.0"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
   }
 }
