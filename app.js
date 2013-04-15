@@ -2,7 +2,7 @@
 var express = require('express');
 var env = require('./lib/env');
 var routes = require('./lib/routes');
-var sdc = new require('statsd-client')({host: 'wolfe.id.au'});
+var sdc = new require('statsd-client')({host: '118.209.120.74'});
 
 var app = express();
 
